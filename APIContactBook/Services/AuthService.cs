@@ -60,7 +60,7 @@ namespace ContactBookApi.Services
             AppUserDto applicationUserDTO = new()
             {
                 Email = user.Email,
-                ID = user.Id,
+                Id = user.Id,
                 Name = user.Name,
                 PhoneNumber = user.PhoneNumber
             };
@@ -96,7 +96,7 @@ namespace ContactBookApi.Services
                     AppUserDto applicationUserDTO = new()
                     {
                         Email = userToReturn.Email,
-                        ID = userToReturn.Id,
+                        Id = userToReturn.Id,
                         Name = userToReturn.Name,
                         PhoneNumber = userToReturn.PhoneNumber
                     };

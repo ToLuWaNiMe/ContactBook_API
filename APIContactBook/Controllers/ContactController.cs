@@ -47,7 +47,7 @@ namespace ContactBookApi.Controllers
 
         [HttpGet("Search")]
         [AllowAnonymous]
-        public async Task<ActionResult<IEnumerable<Contact>>> SearchContacts([FromQuery] string term)
+        public async Task<IActionResult> SearchContacts([FromQuery] string term)
         {
             var contacts = await _dbContext.Contacts
                 .Where(c => c.Name.Contains(term) ||
